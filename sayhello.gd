@@ -4,14 +4,26 @@ extends Panel
 # var a = 2
 # var b = "text"
 
+var a = 2
+var s
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("Button").connect("pressed", self, "_on_Button_pressed")
+	get_node("Button1").connect("pressed", self, "_on_Button_pressed")
+	var label = Label.new()
+	label.set_text("Hello worldxxx!")
+	label.rect_position = Vector2(200,200) 
+    # This adds the node to the scene. Before this line, it is not visible.
+	add_child(label)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	# Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
 
+
 func _on_Button_pressed():
-	get_node("Label").text = "HELLO!"
+	get_node("Label0").text = "HELLO!"
+#	get_node("Label2")._start_counting()
+	get_node("Label3")._start_counting()
+#	get_tree().call_group("labels", "_start_counting")
+
