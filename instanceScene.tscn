@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 25.0
+margin_top = 65.0
+margin_right = 119.0
+margin_bottom = 105.0
+
+[node name="Label" type="Label" parent="Panel"]
+margin_right = 93.0
+margin_bottom = 37.0
+text = "Label from instanced 
+scene"

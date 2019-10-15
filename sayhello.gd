@@ -14,6 +14,7 @@ func _ready():
 	label.rect_position = Vector2(200,200) 
     # This adds the node to the scene. Before this line, it is not visible.
 	add_child(label)
+	_instanceScene()
 
 	# Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -27,3 +28,6 @@ func _on_Button_pressed():
 	get_node("Label3")._start_counting()
 #	get_tree().call_group("labels", "_start_counting")
 
+func _instanceScene():
+	var scene = load("res://instanceScene.tscn") # Will load when the script is instanced.
+	add_child(scene.instance())
