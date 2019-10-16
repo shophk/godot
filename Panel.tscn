@@ -4,6 +4,7 @@
 [ext_resource path="res://framerateLabel2.gd" type="Script" id=2]
 
 [node name="Panel" type="Panel"]
+editor/display_folded = true
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 1 )
