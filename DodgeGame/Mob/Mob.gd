@@ -10,6 +10,7 @@ var mob_types = ["walk", "swim", "fly"]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimatedSprite.animation = mob_types[randi() % mob_types.size()]
+	$AnimatedSprite.playing = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
