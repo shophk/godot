@@ -17,7 +17,8 @@ script = ExtResource( 1 )
 Mob = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 479.0
+margin_left = 1.4483
+margin_right = 480.448
 margin_bottom = 719.0
 color = Color( 0.776471, 0.560784, 0.254902, 1 )
 
